@@ -15,12 +15,12 @@ In addition, we create a shell file called `run.sh` to help start our program. T
 
 More details of our system can be found here:
 - Source Code (daemon.py)
-  + [daemon.py](https://github.com/lpalazzi/CPEN533_assignments/blob/master/A2/daemon.py)
-  + [run.sh](https://github.com/lpalazzi/CPEN533_assignments/blob/master/A2/run.sh)
+  + [daemon.py](https://github.com/Tangjiahui26/DistributedSystems/blob/master/A2/daemon.py)
+  + [run.sh](https://github.com/Tangjiahui26/DistributedSystems/blob/master/A2/run.sh)
 
 - Measurements
-  + [Measurements Result and Plotting](https://github.com/lpalazzi/CPEN533_assignments/tree/master/A2/measurements)
+  + [Measurements Result and Plotting](https://github.com/Tangjiahui26/DistributedSystems/tree/master/A2/measurements)
   
 - Report
-  + [CPEN_533_A2.pdf](https://github.com/lpalazzi/CPEN533_assignments/blob/master/A2/Report/CPEN_533_A2.pdf)
+  + [CPEN_533_A2.pdf](https://github.com/Tangjiahui26/DistributedSystems/blob/master/A2/Report/CPEN_533_A2.pdf)
   

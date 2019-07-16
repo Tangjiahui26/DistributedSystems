@@ -31,11 +31,11 @@ Then the user can follow our command lists to conduct operations on the file sys
 
  More details can be found here:
  - Source Code
- + [fs533.py](https://github.com/CPEN5AB/a2-summer-2019-team-3/blob/master/A3/fs533.py)
- + [daemon.py](https://github.com/CPEN5AB/a2-summer-2019-team-3/blob/master/A3/daemon.py)
+ + [fs533.py](https://github.com/Tangjiahui26/DistributedSystems/blob/master/A3/fs533.py)
+ + [daemon.py](https://github.com/Tangjiahui26/DistributedSystems/blob/master/A3/daemon.py)
 
  - Measurements
- + [Measurements and Plotting](https://github.com/CPEN5AB/a2-summer-2019-team-3/tree/master/A3/Measurements)
+ + [Measurements and Plotting](https://github.com/Tangjiahui26/DistributedSystems/tree/master/A3/Measurements)
 
  - Report
- + [CPEN_533_A3.pdf](https://github.com/CPEN5AB/a2-summer-2019-team-3/blob/master/A3/Report/CPEN_533_A3.pdf)
+ + [CPEN_533_A3.pdf](https://github.com/Tangjiahui26/DistributedSystems/blob/master/A3/Report/CPEN_533_A3.pdf)
