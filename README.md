@@ -18,7 +18,7 @@ This program allows us to query distributed log files on multiple machines, from
 In this assignment, we build the basis for a group communication system: a membership service. The membership list will update itself when: a new machine joins the group; a machine leaves the group voluntarily; a machine fails. Our program is able to avoid at least three machine failures simultaneously. 
 
 - Source Code: [Assignment2](https://github.com/Tangjiahui26/DistributedSystems/tree/master/A2)
-- Source Code (C++ Version): [A2-C++] (https://github.com/Tangjiahui26/DistributedSystems/tree/master/A2_C%2B%2B/GroupMembership)
+- Source Code (C++ Version): [A2-C++](https://github.com/Tangjiahui26/DistributedSystems/tree/master/A2_C%2B%2B/GroupMembership)
 - Report: [CPEN_533_A2.pdf](https://github.com/Tangjiahui26/DistributedSystems/blob/master/A2/Report/CPEN_533_A2.pdf)
 
 ## A3: fs533
