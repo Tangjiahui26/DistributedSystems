@@ -1,0 +1,11 @@
+pscp -r -i C:\Users\tangj\Desktop\CPEN533\my-key-pair.ppk C:\Users\tangj\Desktop\GroupMembership ubuntu@ec2-54-193-91-241.us-west-1.compute.amazonaws.com:/home/ubuntu/A2
+
+pscp -r -i C:\Users\tangj\Desktop\CPEN533\my-key-pair.ppk C:\Users\tangj\Desktop\GroupMembership ubuntu@ec2-13-57-234-1.us-west-1.compute.amazonaws.com:/home/ubuntu/A2
+
+pscp -r -i C:\Users\tangj\Desktop\CPEN533\my-key-pair.ppk C:\Users\tangj\Desktop\GroupMembership ubuntu@ec2-13-57-238-30.us-west-1.compute.amazonaws.com:/home/ubuntu/A2
+
+pscp -r -i C:\Users\tangj\Desktop\CPEN533\my-key-pair.ppk C:\Users\tangj\Desktop\GroupMembership ubuntu@ec2-54-193-37-145.us-west-1.compute.amazonaws.com:/home/ubuntu/A2
+
+pscp -r -i C:\Users\tangj\Desktop\CPEN533\my-key-pair.ppk C:\Users\tangj\Desktop\GroupMembership ubuntu@ec2-54-193-77-234.us-west-1.compute.amazonaws.com:/home/ubuntu/A2
+
+pscp -r -i C:\Users\tangj\Desktop\CPEN533\my-key-pair.ppk C:\Users\tangj\Desktop\GroupMembership ubuntu@ec2-54-219-130-46.us-west-1.compute.amazonaws.com:/home/ubuntu/A2

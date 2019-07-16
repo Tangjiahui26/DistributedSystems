@@ -1,0 +1,24 @@
+Test pattern B
+Test pattern B
+Common A but B different C pattern
+Test pattern B
+Test pattern B
+Test pattern B
+Test pattern B
+Common G but H different I pattern
+Test pattern B
+Test pattern B
+Test pattern B
+This message is on all machine logs, but with different numbers 1234567
+Test pattern B
+Common D but E different F pattern
+Test pattern B
+Test pattern B
+Test pattern B
+Test pattern B
+Test pattern B
+This is string A
+Test pattern B
+Once in all logs1234567
+Test pattern B
+Test pattern B

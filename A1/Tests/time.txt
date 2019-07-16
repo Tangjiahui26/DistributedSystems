@@ -1,0 +1,164 @@
+
+==== Case One: Rare Pattern 1 =======
+
+ubuntu@ip-172-31-28-99:~$ time ./client \"AAAAAAAAAA\" > rare_case.txt
+
+
+No Results from machine.1.log in54.193.91.241
+No Results from machine.2.log in13.57.234.1
+No Results from machine.3.log in13.57.238.30
+No Results from machine.4.log in54.193.37.145
+No Results from machine.5.log in54.193.77.234
+No Results from machine.6.log in54.219.130.46
+Total lines matched: 0
+
+
+First:
+	real    0m0.056s
+	user    0m0.003s
+	sys     0m0.000s
+
+Second:
+	real    0m0.056s
+	user    0m0.003s
+	sys     0m0.000s
+
+Third:
+	real    0m0.057s
+	user    0m0.003s
+	sys     0m0.000s
+
+Fourth:
+	real    0m0.056s
+	user    0m0.001s
+	sys     0m0.001s
+
+Fifth:
+	real    0m0.057s
+	user    0m0.001s
+	sys     0m0.001s
+
+
+*Average*
+	real	0m0.0564s
+
+==== Case two: Rare Pattern 2 =======
+
+ubuntu@ip-172-31-28-99:~$ time ./client \"java\"
+
+
+23 lines matched from machine.1.log in54.193.91.241
+10 lines matched from machine.2.log in13.57.234.1
+27 lines matched from machine.3.log in13.57.238.30
+37 lines matched from machine.4.log in54.193.37.145
+17 lines matched from machine.5.log in54.193.77.234
+20 lines matched from machine.6.log in54.219.130.46
+Total lines matched: 134
+
+First:
+	real    0m0.129s
+	user    0m0.000s
+	sys     0m0.004s
+
+Second:
+	real    0m0.128s
+	user    0m0.002s
+	sys     0m0.002s
+
+Third:
+	real    0m0.130s
+	user    0m0.000s
+	sys     0m0.004s
+
+Fourth:
+	real    0m0.130s
+	user    0m0.002s
+	sys     0m0.002s
+
+Fifth:
+	real    0m0.130s
+	user    0m0.004s
+	sys     0m0.000s
+
+*Average*:
+	real	0m0.1294s
+
+==== Case three: frequent Pattern 1 =====
+
+ubuntu@ip-172-31-28-99:~$ time ./client \"htm\"
+
+15644 lines matched from machine.1.log in54.193.91.241
+11789 lines matched from machine.2.log in13.57.234.1
+2938 lines matched from machine.3.log in13.57.238.30
+17958 lines matched from machine.4.log in54.193.37.145
+3029 lines matched from machine.5.log in54.193.77.234
+8089 lines matched from machine.6.log in54.219.130.46
+Total lines matched: 59447
+
+First:
+	real    0m1.543s
+	user    0m0.219s
+	sys     0m0.219s
+
+Second:
+	real    0m1.344s
+	user    0m0.188s
+	sys     0m0.235s
+
+Third:
+	real    0m1.523s
+	user    0m0.215s
+	sys     0m0.218s
+
+Fourth:
+	real    0m1.491s
+	user    0m0.208s
+	sys     0m0.233s
+
+Fifth:
+	real    0m1.416s
+	user    0m0.234s
+	sys     0m0.206s
+
+*Average*:
+	real	0m1.4634s
+
+==== Case four: frequent Pattern 2 =====
+
+ubuntu@ip-172-31-28-99:~$ time ./client \"com\"
+
+109290 lines matched from machine.1.log in54.193.91.241
+152073 lines matched from machine.2.log in13.57.234.1
+41481 lines matched from machine.3.log in13.57.238.30
+84768 lines matched from machine.4.log in54.193.37.145
+63150 lines matched from machine.5.log in54.193.77.234
+230801 lines matched from machine.6.log in54.219.130.46
+Total lines matched: 681563
+
+First:
+	real    0m30.064s
+	user    0m3.473s
+	sys     0m3.149s
+
+Second:
+	real    0m28.709s
+	user    0m3.384s
+	sys     0m2.948s
+
+Third:
+	real    0m28.939s
+	user    0m3.438s
+	sys     0m3.079s
+
+Fourth:
+	real    0m32.748s
+	user    0m3.435s
+	sys     0m3.123s
+
+Fifth:
+	real    0m29.839s
+	user    0m3.381s
+	sys     0m3.200s
+
+*Average*:
+	real	0m30.0598s

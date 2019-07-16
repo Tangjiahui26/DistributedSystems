@@ -1,0 +1,82 @@
+---
+title: "plot"
+author: "Jiahui Tang"
+date: '2019-06-02'
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(gdata)
+library(reshape)
+library(ggplot2)
+library(Rmisc)
+library(cowplot)
+```
+
+## Get the data
+
+```{r}
+data <- read.xls("/Users/tangjiahui/Desktop/A2/result.xlsx",sheet=1,na.strings=c("NA","#DIV/0!"))
+print(data)
+```
+
+```{r}
+data_cal <- summarySE(data, measurevar="Results", groupvars=c("Operations", "Filesize"))
+print(data_cal)
+```
+
+## Plot the data using ggplot
+
+```{r}
+pd <- position_dodge(.9)
+plot1 <- ggplot(data_cal, aes(x=Operations, y=Results, fill=Filesize)) +
+    geom_bar(position=pd, stat="identity") +
+    geom_point(position=pd) +
+    geom_errorbar(aes(ymin=Results-sd, ymax=Results+sd),
+                  width=.2,                    # Width of the error bars
+                  position=pd) +
+    xlab("Fs533 file system operations") +
+    ylab("Time (s)") +
+    theme_bw() +
+    ggtitle("Times to insert, read, and update, \nfiles of size 25 MB, 100 MB uder no failure")
+plot1
+```
+
+# ```{r,options( warn = -1 ),message=FALSE}
+# plot2<- ggplot(data_cal, aes(x=Percent, y=Results, colour=Node)) + 
+#     geom_errorbar(aes(ymin=Results-ci, ymax=Results+ci), width=.1, position=pd) +
+#     geom_line(position=pd) +
+#     geom_point(position=pd) +
+#     xlab("Message Loss Rate") +
+#     ylab("False Positive Rate") +
+#     theme_bw() +
+#     ggtitle("Average FP rate \nwith 95% Confidence Interval") +
+#     theme(legend.position = c(0.8, 0.3))
+# plot_grid(plot1, plot2, labels = "AUTO")
+# ```
+
+```{r}
+data <- read.xls("/Users/tangjiahui/Desktop/A2/result2.xlsx",sheet=1,na.strings=c("NA","#DIV/0!"))
+print(data)
+```
+
+```{r}
+data_cal <- summarySE(data, measurevar="Results", groupvars=c("Nodes"))
+print(data_cal)
+```
+
+```{r}
+pd <- position_dodge(.9)
+plot2 <- ggplot(data_cal, aes(x=Nodes, y=Results)) +
+    geom_bar(position=pd, stat="identity", fill = "#FF6666", width = .2) +
+    geom_point(position=pd) +
+    geom_errorbar(aes(ymin=Results-sd, ymax=Results+sd),
+                  width=.05,                    # Width of the error bars
+                  position=pd) +
+    xlab("Nodes number") +
+    ylab("Time (s)") +
+    theme_bw() +
+    ggtitle("Times to store the entire English Wikipedia corpus (1.25GB)\n into fs533 with 4 machines and 8 machines")
+plot2
+```

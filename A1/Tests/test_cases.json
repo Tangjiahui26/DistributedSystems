@@ -1,0 +1,8 @@
+{
+    "\"^This is string A$\"": ["1 lines matched from machine.1.log", "No Results from machine.2.log", "No Results from machine.3.log", "No Results from machine.4.log", "No Results from machine.5.log", "No Results from machine.6.log"],
+    "\"^This is.*string A$\"": ["1 lines matched from machine.1.log", "1 lines matched from machine.2.log", "1 lines matched from machine.3.log", "1 lines matched from machine.4.log", "1 lines matched from machine.5.log", "No Results from machine"],
+    "\"^Test pattern B$\"": ["18 lines matched from machine.1.log", "No Results from machine.2.log", "No Results from machine.3.log", "No Results from machine.4.log", "No Results from machine.5.log", "No Results from machine.6.log"],
+    "\"^This message is on all machine logs, but with different numbers [0-9]*$\"": ["1 lines matched from machine.1.log", "1 lines matched from machine.2.log", "1 lines matched from machine.3.log", "1 lines matched from machine.4.log", "1 lines matched from machine.5.log", "1 lines matched from machine.6.log"],
+    "\"^Common.*but.*different.*pattern$\"": ["3 lines matched from machine.1.log", "4 lines matched from machine.2.log", "5 lines matched from machine.3.log", "6 lines matched from machine.4.log", "6 lines matched from machine.5.log", "3 lines matched from machine.6.log"],
+    "\"Once in all logs1234567\"": ["1 lines matched from machine.1.log", "1 lines matched from machine.2.log", "1 lines matched from machine.3.log", "1 lines matched from machine.4.log", "1 lines matched from machine.5.log", "1 lines matched from machine.6.log"]
+}

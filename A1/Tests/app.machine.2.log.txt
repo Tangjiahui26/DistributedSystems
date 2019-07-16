@@ -1,0 +1,7 @@
+Common j but k different l pattern
+Common d but e different f pattern
+Common a but b different c pattern
+This is not string A
+Common g but h different i pattern
+Once in all logs1234567
+This message is on all machine logs, but with different numbers 254876234

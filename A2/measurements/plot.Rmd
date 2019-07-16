@@ -1,0 +1,56 @@
+---
+title: "plot"
+author: "Jiahui Tang"
+date: '2019-06-02'
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(gdata)
+library(reshape)
+library(ggplot2)
+library(Rmisc)
+library(cowplot)
+```
+
+## Get the data
+
+```{r}
+data <- read.xls("./result.xlsx",sheet=1,na.strings=c("NA","#DIV/0!"))
+print(data)
+```
+
+```{r}
+data_cal <- summarySE(data, measurevar="Results", groupvars=c("Node", "Percent"))
+print(data_cal)
+```
+
+## Plot the data using ggplot
+
+```{r}
+pd <- position_dodge(0.001)
+plot1 <- ggplot(data_cal, aes(x=Percent, y=Results, colour=Node)) + 
+    geom_errorbar(aes(ymin=Results-sd, ymax=Results+sd), width=.1, position=pd) +
+    geom_line(position=pd) +
+    geom_point(position=pd) +
+    xlab("Message Loss Rate") +
+    ylab("False Positive Rate") +
+    theme_bw() +
+    ggtitle("Average FP rate \nwith Standard Deviation") +
+    theme(legend.position = c(0.8, 0.3))
+```
+
+```{r}
+plot2<- ggplot(data_cal, aes(x=Percent, y=Results, colour=Node)) + 
+    geom_errorbar(aes(ymin=Results-ci, ymax=Results+ci), width=.1, position=pd) +
+    geom_line(position=pd) +
+    geom_point(position=pd) +
+    xlab("Message Loss Rate") +
+    ylab("False Positive Rate") +
+    theme_bw() +
+    ggtitle("Average FP rate \nwith 95% Confidence Interval") +
+    theme(legend.position = c(0.8, 0.3))
+plot_grid(plot1, plot2, labels = "AUTO")
+```
+

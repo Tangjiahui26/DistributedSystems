@@ -1,0 +1,42 @@
+Running test for regular expression "^This is string A$"
+	Test passed for VM1
+	Test passed for VM2
+	Test passed for VM3
+	Test passed for VM4
+	Test passed for VM5
+	Test passed for VM6
+Running test for regular expression "^This is.*string A$"
+	Test passed for VM1
+	Test passed for VM2
+	Test passed for VM3
+	Test passed for VM4
+	Test passed for VM5
+	Test passed for VM6
+Running test for regular expression "^Test pattern B$"
+	Test passed for VM1
+	Test passed for VM2
+	Test passed for VM3
+	Test passed for VM4
+	Test passed for VM5
+	Test passed for VM6
+Running test for regular expression "^This message is on all machine logs, but with different numbers [0-9]*$"
+	Test passed for VM1
+	Test passed for VM2
+	Test passed for VM3
+	Test passed for VM4
+	Test passed for VM5
+	Test passed for VM6
+Running test for regular expression "^Common.*but.*different.*pattern$"
+	Test passed for VM1
+	Test passed for VM2
+	Test passed for VM3
+	Test passed for VM4
+	Test passed for VM5
+	Test passed for VM6
+Running test for regular expression "Once in all logs1234567"
+	Test passed for VM1
+	Test passed for VM2
+	Test passed for VM3
+	Test passed for VM4
+	Test passed for VM5
+	Test passed for VM6

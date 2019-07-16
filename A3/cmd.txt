@@ -1,0 +1,72 @@
+================== A3=======================
+pscp -r -i C:\Users\tangj\Desktop\CPEN533\my-key-pair.ppk C:\Users\tangj\Desktop\Assignment3\* ubuntu@ec2-54-193-91-241.us-west-1.compute.amazonaws.com:/home/ubuntu/Assignment3
+
+pscp -r -i C:\Users\tangj\Desktop\CPEN533\my-key-pair.ppk C:\Users\tangj\Desktop\Assignment3\* ubuntu@ec2-13-57-234-1.us-west-1.compute.amazonaws.com:/home/ubuntu/Assignment3
+
+pscp -r -i C:\Users\tangj\Desktop\CPEN533\my-key-pair.ppk C:\Users\tangj\Desktop\Assignment3\* ubuntu@ec2-13-57-238-30.us-west-1.compute.amazonaws.com:/home/ubuntu/Assignment3
+
+pscp -r -i C:\Users\tangj\Desktop\CPEN533\my-key-pair.ppk C:\Users\tangj\Desktop\Assignment3\* ubuntu@ec2-54-193-37-145.us-west-1.compute.amazonaws.com:/home/ubuntu/Assignment3
+
+pscp -r -i C:\Users\tangj\Desktop\CPEN533\my-key-pair.ppk C:\Users\tangj\Desktop\Assignment3\* ubuntu@ec2-54-193-77-234.us-west-1.compute.amazonaws.com:/home/ubuntu/Assignment3
+
+pscp -r -i C:\Users\tangj\Desktop\CPEN533\my-key-pair.ppk C:\Users\tangj\Desktop\Assignment3\* ubuntu@ec2-54-219-130-46.us-west-1.compute.amazonaws.com:/home/ubuntu/Assignment3
+
+================= test =====================
+put /home/ubuntu/rare_case.txt test.txt
+put /home/ubuntu/machine.1.log test.log
+get test.log /home/ubuntu/test.log
+
+================= public key ====================
+
+sudo chmod 600 ./CPEN533.pem
+
+pscp -i C:\Users\tangj\Desktop\CPEN533\my-key-pair.ppk C:\Users\tangj\Desktop\CPEN533\CPEN533.pem ubuntu@ec2-54-193-91-241.us-west-1.compute.amazonaws.com:/home/ubuntu/CPEN533.pem
+
+pscp -i C:\Users\tangj\Desktop\CPEN533\my-key-pair.ppk C:\Users\tangj\Desktop\CPEN533\CPEN533.pem ubuntu@ec2-13-57-234-1.us-west-1.compute.amazonaws.com:/home/ubuntu/CPEN533.pem
+
+pscp -i C:\Users\tangj\Desktop\CPEN533\my-key-pair.ppk C:\Users\tangj\Desktop\CPEN533\CPEN533.pem ubuntu@ec2-13-57-238-30.us-west-1.compute.amazonaws.com:/home/ubuntu/CPEN533.pem
+
+pscp -i C:\Users\tangj\Desktop\CPEN533\my-key-pair.ppk C:\Users\tangj\Desktop\CPEN533\CPEN533.pem ubuntu@ec2-54-193-37-145.us-west-1.compute.amazonaws.com:/home/ubuntu/CPEN533.pem
+
+pscp -i C:\Users\tangj\Desktop\CPEN533\my-key-pair.ppk C:\Users\tangj\Desktop\CPEN533\CPEN533.pem ubuntu@ec2-54-193-77-234.us-west-1.compute.amazonaws.com:/home/ubuntu/CPEN533.pem
+
+pscp -i C:\Users\tangj\Desktop\CPEN533\my-key-pair.ppk C:\Users\tangj\Desktop\CPEN533\CPEN533.pem ubuntu@ec2-54-219-130-46.us-west-1.compute.amazonaws.com:/home/ubuntu/CPEN533.pem
+
+
+============== SCP PRE =================
+scp -i CPEN533.pem scp.txt ubuntu@ip-172-31-26-191.us-west-1.compute.internal:/home/ubuntu/scp.txt
+
+scp -i CPEN533.pem scp.txt ubuntu@ip-172-31-28-99.us-west-1.compute.internal:/home/ubuntu/scp.txt
+
+scp -i CPEN533.pem scp.txt ubuntu@ip-172-31-25-60.us-west-1.compute.internal:/home/ubuntu/scp.txt
+
+scp -i CPEN533.pem scp.txt ubuntu@ip-172-31-28-127.us-west-1.compute.internal:/home/ubuntu/scp.txt
+
+scp -i CPEN533.pem scp.txt ubuntu@ip-172-31-23-68.us-west-1.compute.internal:/home/ubuntu/scp.txt
+
+scp -i CPEN533.pem scp.txt ubuntu@ip-172-31-16-232.us-west-1.compute.internal:/home/ubuntu/scp.txt
+
+
+============== measurement ============
+
+pscp -r -i C:\Users\tangj\Desktop\CPEN533\my-key-pair.ppk C:\Users\tangj\Desktop\dummy_40MB.txt ubuntu@ec2-54-193-91-241.us-west-1.compute.amazonaws.com:/home/ubuntu/dummy_40MB.txt
+
+pscp -r -i C:\Users\tangj\Desktop\CPEN533\my-key-pair.ppk C:\Users\tangj\Desktop\dummy_25MB.txt ubuntu@ec2-54-193-91-241.us-west-1.compute.amazonaws.com:/home/ubuntu/dummy_25MB.txt
+
+pscp -r -i C:\Users\tangj\Desktop\CPEN533\my-key-pair.ppk C:\Users\tangj\Desktop\dummy_100MB.txt ubuntu@ec2-54-193-91-241.us-west-1.compute.amazonaws.com:/home/ubuntu/dummy_100MB.txt
+
+pscp -r -i C:\Users\tangj\Desktop\CPEN533\my-key-pair.ppk C:\Users\tangj\Desktop\raw.en.tgz ubuntu@ec2-54-193-91-241.us-west-1.compute.amazonaws.com:/home/ubuntu/wiki.en
+
+put /home/ubuntu/dummy_40MB.txt 40.txt
+put /home/ubuntu/dummy_25MB.txt 25.txt
+get 25.txt /home/ubuntu/dummy_25MB.txt
+put /home/ubuntu/dummy_100MB.txt 100.txt
+get 100.txt /home/ubuntu/dummy_100MB.txt
+remove 25.txt
+remove 100.txt
+
+put /home/ubuntu/wiki.en wiki.en
+
+pscp -r -i C:\Users\tangj\Desktop\CPEN533\my-key-pair.ppk ubuntu@ec2-54-193-91-241.us-west-1.compute.amazonaws.com:/home/ubuntu/Assignment3/FS533-ip-172-31-28-99.log C:\Users\tangj\Desktop\FS533-ip-172-31-28-99.log
+
+pscp -r -i C:\Users\tangj\Desktop\CPEN533\my-key-pair.ppk ubuntu@ec2-54-193-37-145.us-west-1.compute.amazonaws.com:/home/ubuntu/Assignment3/FS533-ip-172-31-28-127.log C:\Users\tangj\Desktop\FS533-ip-172-31-28-127.log
